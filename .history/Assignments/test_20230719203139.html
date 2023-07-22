@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Case Information Form</title>
+</head>
+<body>
+    <h2>Case Information Form</h2>
+    <form action="/submit_form" method="POST">
+        <label for="caseid">Case ID:</label>
+        <input type="text" id="caseid" name="caseid" required><br>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required><br>
+
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br>
+
+        <p>Select Case Category:</p>
+        <input type="radio" id="category1" name="category" value="Category 1" required>
+        <label for="category1">Category 1</label><br>
+
+        <input type="radio" id="category2" name="category" value="Category 2">
+        <label for="category2">Category 2</label><br>
+
+        <input type="radio" id="category3" name="category" value="Category 3">
+        <label for="category3">Category 3</label><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

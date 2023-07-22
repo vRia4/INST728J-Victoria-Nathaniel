@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Case Information Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            text-align: center;
+            width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block; 
+            /* margin-bottom: 5px;
+            text-align: left;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 80%;
+            /* padding: 10px; */
+            /* margin-bottom: 10px; */
+            border: 1px solid #c52f2f;
+            /* border-radius: 4px; */
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: rgb(80, 31, 31);
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit_form" method="POST">
+        <h2>Case Information Form</h2>
+
+        <label for="caseid">Case ID:</label>
+        <input type="text" id="caseid" name="caseid" required> </br>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+
+        <p>Select Case Category:</p>
+        <input type="radio" id="category1" name="category" value="Category 1" required>
+        <label for="category1">Category 1</label>
+        <input type="radio" id="category2" name="category" value="Category 2">
+        <label for="category2">Category 2</label>
+        <input type="radio" id="category3" name="category" value="Category 3">
+        <label for="category3">Category 3</label>
+
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
