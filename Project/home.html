@@ -2,28 +2,45 @@
 <html lang="en">
 <head>
     <title>Travel</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="styles.css"/>
 </head>
-<body style = "background: url(image/vacay.png);
-background-size: cover;
-background-repeat: no-repeat;">
-
-    <div class="menu_bar">
+<body style="background-image: url(image/beach.png);
+      background-size: cover;
+      background-repeat: no-repeat;" height="100vh">
+    <nav >
+      <div class="menu_bar">
+        <img src='image/travel-logo.png' alt="symbol">
         <h4 class="logo">Travel<span>Spot</span></h4>
-        <!-- <img src='vacay.png' alt='visit'/> -->
-        <ul>
-          <li>
+        
+        <ul class="menu">
             <li><a href="home.html">Home</a></li>
-            <li><a href="location.html">Locations</a></li>
+          
+            <li id="dropdown">
+              <a href="#">Locations</a>
+                <ul class="submenu">
+                    <li><a href="london.html">London</a></li>
+                    <li><a href="miami.html">Miami </a></li>
+                    <li><a href="sanfran.html">San Francisco</a></li>
+                  </ul>
+            </li>
+            
             <li><a href = "recom.html">Guide Book</a></li>
             
             <li><a href="subscri.html">Subscription</a></li>
 
             <li><a href="info.html">Contact Us</a></li>
-          </li>
         </ul>
-    </div>
+      </div>
+    </nav>
 
-    <h1><a href="subscri.html">Subscribe for more information</a></h1>
+    <div class="row">
+      <h1>Welcome!!!</h1>
+      <p>Looking for a fun relaxation place to go with excellent services, <br> things to do and safety measures to take? </p> 
+      <button class="button"><a href="subscri.html">Subscribe for more information</a></button>
+      
+  </div>
+  <div class="col">
+    <!-- <p>Explore</p> -->
+</div>
+    <!-- <h1><a href="subscri.html">Subscribe for more information</a></h1> -->
     </body>
