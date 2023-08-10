@@ -20,21 +20,21 @@
     background-color: #201f18a6; 
   } */
 
-  /* h1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:rgb(31, 2, 7);
-    align-items: center;
+  h2{
+    font-size: 16pt;
   }
   
-  h3{
-    color: #cc3333;
-    margin-top: 1%;
-  }*/
+  .text{
+    font-size: 14pt;
+    text-align: justify;
+    line-height: 1.5;
+    width: 100%;
+  }
   
   nav {
     background-color: #1974a8;
     /* color: #1b0c0c; */
-    padding: 00%;
+    padding: 0%;
     background-image: none;
     /* margin-left: 30%; */
     /* width: 100%; */
@@ -54,7 +54,7 @@
 img{
   width: 3%;
   height: 4%;
-
+  /* margin-top: 1%; */
 }
   .menu_bar {
     /* background-color: #839db6; */
@@ -69,7 +69,7 @@ img{
   }
   
   .menu_bar ul {
-    list-style: none;
+    /* list-style: none; */
     display: flex;
   }
   
@@ -97,7 +97,7 @@ img{
   ul.menu{
     /* list-style-type: none; */
     /* margin-right: 20%; */
-    margin-left: 20%;
+    margin-left: 10%;
     /* padding: 0%; */
   }
   
@@ -110,6 +110,7 @@ img{
     color: #fff;
     text-decoration: none;
     padding: 5px;
+    /* margin-left: 5%; */
   }
   
   ul.menu li a:hover {
@@ -174,9 +175,33 @@ img{
     color: black;
   }
 
+  .reserve{
+    display: inline-block;
+    background-color: rgb(78, 167, 78);
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 12%;
+    margin-top: 1%;
+    color: rgb(12, 8, 12);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+    .header{
+      position: relative; 
+      display: inline-block;
+    }
+
+    .imgText{
+      position: absolute;
+      top: 10%; /* Adjust the value to control vertical positioning */
+      text-align: center;   /* Adjust the value to control horizontal positioning */
+      background-color: rgba(255, 255, 255, 0.8);
+      /* padding: 5px; */
+    }
   /* Basic styles for the dropdown container */
   .dropdown-container {
-    width: 95%;
+    width: 100%;
     border: 1px solid #a52a2a;
     padding: 10px;
 }
@@ -217,7 +242,7 @@ margin-top: 1px;
 
 footer .icons a {
 color: #921515;
-margin-left: 3px;
+margin-left: 10px;
 }
 
 /* img.img1 {
@@ -226,80 +251,3 @@ margin-left: 3px;
 } */
 /* image/rosewood.jpg */
 
-.slideshow {
-  width: 30%;
-  position: relative;
-  margin-top: 2%;
-  margin-left: 10%;
-  /* border: 1px solid */
-}
-
-.slideshow2 {
-  width: 30%;
-  position: relative;
-  margin-top: 2%;
-  margin-left: 10%;
-  border: 1px solid
-}
-
-/* Hide the images by default */
-.Slides {
-  display: none;
-}
-
-.slides2 {
-  display: none;
-  /* margin-top: 10%; */
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-}
-
-.prev1, .next1 {
-  cursor: pointer;
-  position:relative;
-  top: 100%;
-  width: 10%;
-  margin-top: 10%;
-  padding: 16%;
-  color: rgb(8, 5, 5);
-}
-
-/* Position the "next button" to the right */
-.next, .next1 {
-  right: 0;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .prev1:hover .next:hover, .next1:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-
-/* Number text (1/3 etc) */
-.options {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
