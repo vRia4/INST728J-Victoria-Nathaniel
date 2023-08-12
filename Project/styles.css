@@ -20,9 +20,7 @@
     background-color: #201f18a6; 
   } */
 
-  h2{
-    font-size: 16pt;
-  }
+  
   
   .text{
     font-size: 14pt;
@@ -151,7 +149,7 @@ img{
     width: 10%;
   }
 
-  .row{
+  .home-row{
     /* display: flex; */
     /* height: 88%; */
     align-items: center;
@@ -228,40 +226,15 @@ img{
       /* padding: 5px; */
     }
   /* Basic styles for the dropdown container */
-  .dropdown-container {
-    width: 100%;
-    border: 1px solid #a52a2a;
-    padding: 10px;
-}
+  
 
-/* Style for the overview section */
-.overview {
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 20pt;
-}
-
-/* Initially hide the detailed description */
-.description {
-    display: none;
-    margin-top: 10px;
-}
-
-/* Show the description when the dropdown is expanded */
-.expanded .description {
-    display: block;
-}
-
-
- footer {
-  background-color: #f3e2e2;
-  padding: 10px;
+footer{
   text-align: center;
+  margin-top: 5%; 
+  line-height: 2;
+  padding: 20px;
+  background-color: #f3e2e2;  
   color: #333;
-  font-size: 14px;
-  margin-top: 25%;
-  padding-right: 30%;
-  margin-right: 0%;
 }
 
 /*footer .icons {
@@ -273,11 +246,135 @@ color: #921515;
 margin-left: 10px;
 }
 
-/* img.img1 {
-  margin-left: 20%;
+/* Contact Us page */
+.header1, .text1 {
+  line-height: 2;
+}
+
+#wrapper{
+  width: 60%;
+  margin: 5 auto;
+  padding-top: 0%;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+.form-container {
+width: 100%;
+margin-left: 10%;
+padding: 20px;
+}
+
+.form-input {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #45a049;
+}
+
+/* Subscribe page */
+.head1 {
+  margin-top: 20px;
+  padding : 10px;
+  margin-left: 30%;
+  /* font-size: 14pt; */
+}
+
+.head2, th, td, table {
+  margin-top: 20px;
+  padding : 10px;
+  margin-left: 30%;
+  font-size: 14pt;
+}
+
+.head2{
+  font-family: "Helvetica Neue",Helvetica,Arial;
+  font-size: 14px;
+}
+
+/* Location page */
+.header-pics {
+  width: 100%; 
+}
+
+.dropdown-container {
   width: 100%;
-} */
-/* image/rosewood.jpg */
+  border: 1px solid #a52a2a;
+  padding: 10px;
+}
+
+.overview {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+.description {
+  display: none;
+  margin-top: 1px;
+}
+
+.expanded .description {
+  display: block;
+}
+
+h2 {
+  font-size: 16pt;
+}
+
+h3 {
+  width: 50%; 
+  text-align: justify; 
+  margin-left: 12%; 
+  margin-top: 2%;
+}
+
+.culture {
+  margin-top: 2%
+}
+
+.side {
+  width: 55%; 
+  margin-left: 10%; 
+  margin-top: 3%; 
+  border-radius: 10px;
+}
+.lists {
+  font-size: 20pt;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.place {
+  width: 55%; 
+  margin-left: 10%; 
+  margin-top: 2%; 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.address {
+  width: 50%; 
+  text-align: justify; 
+  margin-left: 12%; 
+  margin-top: 1%; 
+  font-weight: bold;
+}
 
 @media (min-width: 1200px) {
   /* Styles for large screens */
