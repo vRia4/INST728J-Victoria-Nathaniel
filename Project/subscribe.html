@@ -14,14 +14,39 @@
    background-size: cover;
    background-repeat: no-repeat;
    height: 100vh;">
-		
+	
+	<nav >
+        <div class="menu_bar">
+        <img src='image/travel-logo.png' alt="symbol">
+        <h4 class="logo">Travel<span>Spot</span></h4>
+        
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            
+            <li id="dropdown">
+                <a href="#">Locations</a>
+                <ul class="submenu">
+                    <li><a href="london.html">London</a></li>
+                    <li><a href="miami.html">Miami </a></li>
+                    <li><a href="australia.html">Australia</a></li>
+                    </ul>
+            </li>
+            
+            <li><a href="guideBook.html">Guide Book</a></li>
+            
+            <li><a href="subscribe.html">Subscribe</a></li>
+
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+        </div>
+    </nav>
 	<h1 class="head1">Sign in here to get more feed</h1>
 	<form action = "welcome.html" name = "myForm" onsubmit = "return(validate());">
-		<table cellspacing = "15" cellpadding = "5" style="background-color: lightblue; width: 50%;" >
+		<table cellspacing = "15" cellpadding = "5" >
 		
 			<tr>
 				<td align = "right">FirstName:</td>
-				<td><input type = "text" name = "fName" placeholder="First name" cols = "20"/></td>
+				<td><input type = "text" name = "fName" placeholder="First name" /></td>
 			</tr>
 			
 			<tr>
@@ -31,7 +56,7 @@
 			
 			<tr>
 				<td align = "right">EMail:</td>
-				<td><input type = "text" name = "EMail" placeholder="Email"/></td>
+				<td><input type = "email" name = "Email" placeholder="Email"/></td>
 			</tr>
 
 			<tr>
@@ -41,8 +66,8 @@
 			
 			<tr>
 				<td align = "right">Country</td>
-				<td>
-					<select name = "Country">
+				<td >
+					<select name = "Country" class="options">
 						<option value = "-1" selected>Select country</option>
 						<option value = "1">Australia</option>
 						<option value = "2">Canada</option>

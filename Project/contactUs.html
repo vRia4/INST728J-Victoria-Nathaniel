@@ -6,19 +6,45 @@
 		<title>Contact Us</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
         <link rel="stylesheet" href="styles.css"/>  
-    	<script async defer src="script.js" charset = "utf-8"></script>	     
+    	<script src="script.js" ></script>	     
    </head>
-   
    <body style="background-image: url(image/sub.png);
    background-size: cover;
    background-repeat: no-repeat;
    height: 100vh;">
+
+    <nav >
+        <div class="menu_bar">
+        <img src='image/travel-logo.png' alt="symbol">
+        <h4 class="logo">Travel<span>Spot</span></h4>
+        
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            
+            <li id="dropdown">
+                <a href="#">Locations</a>
+                <ul class="submenu">
+                    <li><a href="london.html">London</a></li>
+                    <li><a href="miami.html">Miami </a></li>
+                    <li><a href="australia.html">Australia</a></li>
+                    </ul>
+            </li>
+            
+            <li><a href="guideBook.html">Guide Book</a></li>
+            
+            <li><a href="subscribe.html">Subscribe</a></li>
+
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+        </div>
+    </nav>
+
     <div id="wrapper">
 		<div class="form-container">
-            <h1 class="header1">Form Submission</h1>
-            <p class="text1">Thank you for contacting us. Please leave your questions here and we will endeavor to anwser them.</p>
+            <h1>Contact Us</h1>
+            <p class="text1"><em>Thank you for contacting us. Please leave your questions here and we will endeavor to anwser them.</em></p>
             
-            <form action = "welcome.html" name = "myForm" onsubmit = "return(validate2());">
+            <form action = "#" name = "myForm" onsubmit = "return(validate2());">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="flName" class="form-input", placeholder="Full name" ><br>
     
@@ -28,22 +54,18 @@
                 <label for="message">Select related topic question to discuss</label><br>
                 <select name="topic" class="form-input">
                     <option value = "-1" selected>Select a topic</option>
-                    <option value = "1">Australia</option>
-                    <option value = "2">Canada</option>
-                    <option value = "3">France</option>
-                    <option value = "4">Germany</option>
-                    <option value = "5">Georgia</option>
-                    <option value = "6">Mexico</option>
-                    <option value = "7">Spain</option>
-                    <option value = "8">UK</option>
-                    <option value = "9">USA</option>
+                    <option value = "1">How to unsubscribe</option>
+                    <option value = "2">Recommended hotel to stay in your region</option>
+                    <option value = "3">Issues with the website</option>
                 </select><br>
     
                 <label for="message">Comment:</label><br>
-                <textarea id="message" name="comment" class="form-input" rows="4" , placeholder="Comment"></textarea><br>
+                <textarea id="message" name="comment" class="form-input" rows="4", placeholder="Comment"></textarea><br>
     
-                <input type="submit" value="Submit" class="form-submit">
+                <input type="submit" name="turn" value="Submit" class="form-submit">
             </form> 
+            <div id="feedback"></div>
+            <!-- <a href="home.html">Return to Home page</a> -->
         </div>
     </div>	
 		<footer > 

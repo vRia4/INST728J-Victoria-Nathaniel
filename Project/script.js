@@ -6,7 +6,7 @@ function validate() {
         document.myForm.fName.focus() ;
         return false;
     }
-    if( document.myForm.EMail.value == "" ) {
+    if( document.myForm.Email.value == "" ) {
         alert( "Please provide your Email!" );
         document.myForm.EMail.focus() ;
         return false;
@@ -27,7 +27,11 @@ function validate() {
 
 // Form Validation - Contact Us page
 function validate2() {
-			
+    event.preventDefault();
+    var form = document.getElementById("myForm");
+    var message = document.getElementById("feedback");
+    message.innerHTML = "Thanks for contacting us. Your message has been recorded. Our response will be sent to your email.";
+
     if( document.myForm.flName.value == "" ) {
         alert( "Please enter your first and last name!" );
         document.myForm.flName.focus() ;
@@ -48,6 +52,7 @@ function validate2() {
         document.myForm.comment.focus() ;
         return false;
     }
+
 }
 
 // Location page
