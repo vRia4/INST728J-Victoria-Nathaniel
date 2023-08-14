@@ -440,10 +440,12 @@ h3 {
 }
 
 .page{
-  margin-top: 20%; 
+  margin-top: auto; 
   font-family: Arial, Helvetica, sans-serif; 
   font-size: 30pt; 
   text-decoration-color: black;
+  border: none;
+  background-color: none;
 }
 
 /* Guide Book page */
@@ -466,7 +468,7 @@ h3 {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   /* Styles for large screens */
   /* .footer { */
     body{
