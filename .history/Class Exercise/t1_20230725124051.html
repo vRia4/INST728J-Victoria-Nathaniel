@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Label on Top Left of Textarea</title>
+  <style>
+    .textarea-container {
+      position: relative;
+    }
+
+    label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 14px;
+      color: #777;
+      padding: 5px;
+    }
+
+    textarea {
+      width: 300px;
+      height: 150px;
+      padding: 5px;
+      margin-top: 20px; /* To create space between label and textarea */
+    }
+  </style>
+</head>
+<body>
+  <div class="textarea-container">
+    <label for="comment">Enter your comment:</label>
+    <textarea id="comment" name="comment" required></textarea>
+  </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Building HTML Form</title>
+</head>
+<fieldset>
+<form name="myFirstForm" method="post" action="thankyou.html">
+<legend class="legend">Personal Information</legend> </br>
+<div style="background-color:lightblue">
+	<label for="FirstName" > FirstName</label>
+	<input type="text" placeholder="FirstName"> </br>
+	<label for="LastName"> LastName</label>
+	<input type="text" placeholder="LastName">
+</div>
+<br>
+<div>
+	<label for="DateOfBirth"> DateOfBirth</label><br>
+	<input type="date" value="">
+</div>
+<br>
+
+<div>
+	<label for="Gender"> Gender</label><br>
+	<input type="radio" name="Gender">Male
+	<input type="radio" name="Gender">Female
+</div>
+<br>
+<div>
+	<label for="Address"> Address</label><br>
+	<input type="text" placeholder="StreetAddress"> </br>
+	<input type="text" placeholder="AddressLine2"> </br>
+	<input type="text" placeholder="City"> </br>
+	<input type="text" placeholder="State"> </br>
+	<input type="text" placeholder="ZipCode"> 
+	<select class="SelectOptions">
+	<option value="Country">SelectCountry</option>
+	<option value="Country">USA</option>
+	<option value="Country">Canada</option>
+	</select>
+</div>
+<br>
+<div>
+	<label for="PhoneNumber"> PhoneNumber</label> <br>
+	<input type="tel" placeholder="WorkPhone"> 
+	<input type="tel" placeholder="Home Phone"> 
+</div>
+<br>
+
+<div>
+	<label for="Email"> Email</label> <br>
+	<input type="email" placeholder="Your Email address (umd@umd.edu)">
+</div>
+<br>
+<div>
+	<input type="submit" value="Submit">
+</div>
+</fieldset>
+
+<ol>
+        <li>Choose which type of game you want to play</li>
+        <li>Press the spacebar to start the game</li>
+        <li>
+            <ul>
+                <li>Controls for single player mode:</li>
+                <li>
+                    <ul>
+                        <li>W and S</li>
+                        <li>&uarr; and &darr;</li>
+                        <li>A and Z</li>
+                        <li>' (apostrophe) and / (forward slash)</li>
+                    </ul>
+                </li>
+                <li>Controls for double player mode:</li>
+                <li>
+                    <ul>
+                        <li>The right player uses A and Z</li>
+                        <li>The left player uses ' and /</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ol>
+</html>

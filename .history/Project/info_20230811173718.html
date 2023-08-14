@@ -1,0 +1,171 @@
+<html>   
+	<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contact Us</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+        <link rel="stylesheet" href="styles.css"/>  
+    	<script type = "text/javascript">
+
+			function validate() {
+			
+				if( document.myForm.flName.value == "" ) {
+					alert( "Please enter your first and last name!" );
+					document.myForm.flName.focus() ;
+					return false;
+				}
+				if( document.myForm.Email.value == "" ) {
+					alert( "Please provide your Email!" );
+					document.myForm.Email.focus() ;
+					return false;
+				}
+				if( document.myForm.topic.value == "-1" ) {
+					alert( "Please select the topic to discuss " );
+					return false;
+				}
+				return( true );
+                if( document.myForm.comment.value == "" ) {
+					alert( "Please provide your comment!" );
+					document.myForm.comment.focus() ;
+					return false;
+				}
+			}
+		</script>
+		<style>
+			html{
+				background-image: url(image/sub.png);
+				background-size: cover;
+				background-repeat: no-repeat;
+				height: 100vh;
+			}
+			/* h1, .text1, th, td, table {
+				margin-top: 20px;
+				padding : 10px;
+				margin-left: 15%;
+			} */
+
+			h2{
+				font-family: "Helvetica Neue",Helvetica,Arial;
+				font-size: 14px;
+			}
+
+			/* footer {
+					background-color: #f3e2e2;
+					padding: 20px;
+					text-align: center;
+					color: #333;
+					font-size: 14px;
+					margin-top: 20.5%;
+					width: 100%;
+					margin-right: 20%;
+					padding-right: 0px;
+				}
+
+			/*footer .icons {
+				margin-top: 0%;
+			} */
+
+            /* footer{
+                background-color: #f3e2e2;
+                max-width: 100%;
+                padding-left: 1%;
+                border: black;
+            } */
+            
+			footer .icons a {
+				color: #921515;
+				margin-right: 10px;
+			}
+
+            .wrapper{
+            width: 60%;
+            margin: 0 auto;
+            mar
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f7f7f7;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            }
+            .form-container {
+            width: 100%;
+            margin-left: 10%;
+            padding: 20px;
+            /* border: 1px solid #ccc;
+            background-color: #f7f7f7;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); */
+        }
+
+        /* Styles for input fields */
+        .form-input {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Style the submit button */
+        .form-submit {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Style the submit button on hover */
+        .form-submit:hover {
+            background-color: #45a049;
+        }
+		</style>      
+   </head>
+   
+   <body >
+    <div class="wrapper">
+		<div class="form-container">
+            <h1>Form Submission</h1>
+            <p class="text1">Thank you for contacting us. Please leave your questions here and we will endeavor to anwser them.</p>
+            
+            <form action = "welcome.html" name = "myForm" onsubmit = "return(validate());">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="flName" class="form-input", placeholder="Full name" ><br>
+    
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="Email" class="form-input" , placeholder="Email"><br>
+    
+                <label for="message">Select related topic question to discuss</label><br>
+                <select name="topic" class="form-input">
+                    <option value = "-1" selected>Select a topic</option>
+                    <option value = "1">Australia</option>
+                    <option value = "2">Canada</option>
+                    <option value = "3">France</option>
+                    <option value = "4">Germany</option>
+                    <option value = "5">Georgia</option>
+                    <option value = "6">Mexico</option>
+                    <option value = "7">Spain</option>
+                    <option value = "8">UK</option>
+                    <option value = "9">USA</option>
+                </select><br>
+    
+                <label for="message">Comment:</label><br>
+                <textarea id="message" name="comment" class="form-input" rows="4" , placeholder="Comment"></textarea><br>
+    
+                <input type="submit" value="Submit" class="form-submit">
+            </form> 
+        </div>
+    </div>	
+		<footer align="center" style="margin-top: 5%; padding: 20px; color: #333;"> 
+			<div><strong>Follow us on social media for more highlights</strong></div>
+			<p>&copy; 2023 TravelSpot. All rights reserved.</p>
+			<p>Contact: travelspot@gmail.com</p>
+	
+			<div class="icons">
+				<a href="https://www.facebook.com" title="Facebook"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.twitter.com" title="Twitter"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.instagram.com" title="Instagram"><i class="fab fa-instagram"></i></a>
+			</div>
+		</footer>
+   	</body>
+</html>

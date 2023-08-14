@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Label Beside Textarea</title>
+  <style>
+    .form-group {
+      display: flex;
+      flex-direction: row;
+      align-items: top;
+    }
+
+    .form-group label {
+      font-size: 14px;
+      color: #777;
+      margin-right: 10px;
+    }
+
+    .form-group textarea {
+      width: 300px;
+      height: 150px;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-group">
+    <label for="comment">Enter your comment:</label>
+    <textarea id="comment" name="comment" required></textarea>
+  </div>
+</body>
+</html>

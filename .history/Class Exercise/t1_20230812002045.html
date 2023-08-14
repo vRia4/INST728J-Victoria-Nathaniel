@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function handleSubmit() {
+            // Prevent the default form submission
+            event.preventDefault();
+
+            // Get the form element
+            var form = document.getElementById("myForm");
+
+            // Perform any additional form processing here
+            // For demonstration purposes, we'll just display a message
+
+            // Get the message element
+            var message = document.getElementById("responseMessage");
+
+            // Display a custom response message
+            message.innerHTML = "Form submitted successfully!";
+        }
+    </script>
+</head>
+<body>
+    <form id="myForm" onsubmit="handleSubmit()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="responseMessage"></div>
+</body>
+</html>

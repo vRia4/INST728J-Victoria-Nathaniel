@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function validate2() {
+    event.preventDefault();
+    var form = document.getElementById("myForm");
+    var message = document.getElementById("responseMessage");
+    message.innerHTML = "Thanks for contacting us. You message has been recorded. Our response will be sent to your email";
+    	
+    if( document.myForm.flName.value == "" ) {
+        alert( "Please enter your first and last name!" );
+        document.myForm.flName.focus() ;
+        return false;
+    }
+    if( document.myForm.Email.value == "" ) {
+        alert( "Please provide your Email!" );
+        document.myForm.Email.focus() ;
+        return false;
+    }
+    if( document.myForm.topic.value == "-1" ) {
+        alert( "Please select the topic to discuss " );
+        return false;
+    }
+    return( true );
+    if( document.myForm.comment.value == "" ) {
+        alert( "Please provide your comment!" );
+        document.myForm.comment.focus() ;
+        return false;
+    }
+    
+}
+    </script>
+</head>
+<body>
+    <form action = "#" name = "myForm" onsubmit = "return(validate2());">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="responseMessage"></div>
+</body>
+</html>

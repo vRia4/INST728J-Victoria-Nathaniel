@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Employee Portal</title>
+    <style>
+        html{
+            background-image: url(images/mainBgrnd.gif);
+        }
+
+        #wrapper {
+            width: 70%;
+            margin-left: 20%;
+            /* padding-top: 0%; */
+            margin-bottom: 5%;
+        }
+
+        #title{
+            /* position: absolute; */
+            /* width: 70.5%; */
+            background-color: rgb(245, 233, 233);
+            padding: 14px;
+            /* margin-left: 14.8%; */
+            /* top: 1px; */
+            padding-left: 0px;
+        }
+
+        .footer-container{
+            /* width : 70%; */
+            background-color: rgb(245, 233, 233);
+            font-size: 11pt;
+            padding: 10px;
+            /* width : 70.9%; */
+            /* margin-left: 15%; */
+        }
+
+        .container{
+            display: flex;
+            background-image: url(images/bg1.gif);
+            /* width : 72%; */
+            padding: 3px;
+            /* margin-left: 15%; */
+            /* margin-top: 7.5%; */
+        }
+
+        .description{
+            margin-left: 20px;
+            padding-bottom: 0%;
+            line-height: 1.5;
+        }
+        
+        u, .logo span{
+            color: rgb(207, 241, 9);
+            margin-right: 15px;
+        }
+
+        #form{
+            background-color: rgb(233, 217, 217);
+            width: 63%;
+            margin-left: 1%;
+            padding: 2%;
+        }
+
+        h3{
+            display: inline;
+            font-size: 12pt;
+            margin-left: 4%;
+        }
+
+        .form-group {
+            margin-top: 5%;
+            margin-left: 4%;
+            width: 87%; 
+            padding: 3%;
+            background-color:rgb(253, 234, 237);
+        }
+
+        .title { 
+            color:#9B3333;
+            margin-left: 19%;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        label {
+            margin-left: 20%;
+            font-weight: bold;
+        }
+
+        input[type="num"] {
+            width: 10%; 
+            margin-left: 4.5%;
+        }
+
+        input[type="class"] {
+            width: 50%;
+            margin-left: 2.9%;
+            margin-top: 3px;
+        }
+
+        .textbox {
+            display: flex;
+            flex-direction: row;
+            align-items: top;
+        }        
+        
+        textarea {
+            width: 35.5%;
+            margin-left: 1%;
+            padding: 0px;
+            margin-top: 3px;
+        }
+        
+        input[type="image"] {
+        margin-left: 37%;
+        margin-top: 4px;
+        }
+
+        u{
+        margin: 15px;
+        padding: 0%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <div id="title">
+        <img src='images/umd_logo.png' alt='UMD logo'/>
+    </div>
+    
+    <div class="container">
+        <div class="description">
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Payroll Information</span></u><br>
+            
+            <img src='images/arrow_ID.gif' alt='arrow logo'/>
+            <u class="logo"><span>Performance Appraisal</span></u><br>
+            
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>TimeSheet</span></u><br>
+            
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Leave Management</span></u><br>
+            
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Health Benefits</span></u><br>
+            
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Organization Chat</span></u><br>
+            
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Access Management</span></u><br>
+            
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Career Development</span></u><br>
+
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>My Profile</span></u><br>
+
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Expense Reimbursement</span></u><br>
+
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Retirement Planning</span></u><br>
+
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Ticket management</span></u><br>
+
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Documents</span></u><br>
+
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Feedback</span></u><br>
+        </div>
+        <aside id="form">
+            <h3>Please complete following form</h3>
+
+            <div class="form-group">
+                <legend class="title">FEEDBACK</legend>
+        
+                <form action="ThankYou.html" name="myForm"  onsubmit = "return(validateForm());" method="post">
+                    <label for="caseID" > CaseID: </label>
+                    <input type="num" value="34564" name="caseID"/><br>
+        
+                    <label for="subject">Subject:<span style="color: red;">*</label>
+                    <input type="class" placeholder=" " name="subject"> </br>
+                    
+                    <div class="textbox">
+                        <label for="subject">Comment:<span style="color: red;">*</label>
+                        <textarea id="comment" name="comment" rows="9"></textarea> </br>
+                    </div>
+
+                    <input type="image" src='images/btn_submit.gif' alt="Submit">
+                </form>
+            </div>
+        </aside> 
+    </div>
+    <div class="footer-container">
+        <footer align="center"> <div><strong>Copyright (c) UMD. All Rights Reserved.</strong></div></footer>
+    </div>
+</div>
+    <script type = "text/javascript">
+        // Form validation code will come here.
+        function validateForm() {
+        
+            if( document.myForm.caseID.value == "" ) {
+                alert( "Please enter your caseID!" );
+                document.myForm.caseID.focus() ;
+                return false;
+            }
+            if( document.myForm.subject.value == "" ) {
+                alert( "Please enter the Subject title!" );
+                document.myForm.subject.focus() ;
+                return false;
+            }
+            if( document.myForm.comment.value == "" ) {
+                alert( "Please provide a comment!" );
+                document.myForm.comment.focus() ;
+                return false;
+            }
+            return(true);
+        }
+    </script>
+</body>

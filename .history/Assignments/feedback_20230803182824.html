@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Employee Portal</title>
+<style>
+
+    html{
+        min-height: 100%;
+        background-color: rgb(207, 90, 90)
+    }
+
+    #title{
+		width: 70%;
+		background-color: rgb(245, 233, 233);
+		padding: 15px;
+        margin-left: 15%;
+    }
+
+    .footer-container{
+        width : 70%;
+		background-color: rgb(245, 233, 233);
+        font-size: 11pt;
+		padding: 10px;
+        width : 70.7%;
+        margin-left: 15%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        background-color: rgb(145, 48, 48);
+        width : 71.5%;
+        padding: 3px;
+        margin-left: 15%;
+    }
+
+    .imgs{
+        margin-bottom: 30%;
+    }
+    u, .logo span{
+        color: rgb(207, 241, 9);
+        margin-left: 15px;
+    }
+
+    #form{
+        background-color: rgb(233, 217, 217);
+        width: 70%;
+        margin-left: 15%;
+        padding: 1%;
+    }
+
+    h3{
+        font-size: 12pt;
+        margin-left: 5%;
+    }
+
+    .form-group {
+        margin-left: 3%;
+        width: 90%; 
+        padding: 5px;
+    }
+
+    .wrapper {
+            background-color:rgb(253, 234, 237);
+            padding: 20px;
+        }
+
+        .title { 
+            color:#9B3333;
+            margin-left: 20%;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        label {
+            margin-left: 20%;
+            font-weight: bold;
+        }
+
+        input[type="num"] {
+            width: 10%; 
+            margin-left: 4%;
+        }
+
+        input[type="class"] {
+            width: 50%;
+            margin-left: 2.7%;
+            margin-top: 3px;
+        }
+
+        .textbox {
+            display: flex;
+            flex-direction: row;
+            align-items: top;
+        }        
+        
+        textarea {
+            width: 35.5%;
+            margin-left: 1%;
+            padding: 0px;
+            margin-top: 3px;
+        }
+        
+      .btn{
+        margin-left: 33%;
+        margin-top: 5px;
+
+      } 
+      
+</style>
+</head>
+<body>
+    <div id="title">
+        <img src='images/umd_logo.png' alt='UMD logo'/>
+    </div>
+    
+    <div class="container">
+        <div class="imgs">
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Payroll Information</span></u><br>
+            
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Performance Appraisal</span></u><br>
+            
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>TimeSheet</span></u><br>
+            
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Leave Management</span></u><br>
+            
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Health Benefits</span></u><br>
+            
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Organization Chat</span></u><br>
+            
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Access Management</span></u><br>
+            
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Career Development</span></u>
+
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>My Profile</span></u>
+
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Expense Reimbursement</span></u>
+
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Retirement Planning</span></u>
+
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Ticket management</span></u>
+
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Documents</span></u>
+
+            <img src='images/arrow.gif' alt='arrow logo'/>
+            <u class="logo"><span>Feedback</span></u>
+        </div>
+        <aside id="form">
+            <h3>Please complete following form</h3>
+
+            <div class="form-group">
+                <div class="wrapper">
+                    <legend class="title">FEEDBACK</legend>
+            
+                    <form name="myFirstForm" method="post" action="Thankyou.html">
+                        <label for="caseID" > CaseID: </label>
+                        <input type="num" value="34564"><br>
+            
+                        <label for="subject">Subject:<span style="color: red;">*</label>
+                        <input type="class" placeholder=" "> </br>
+                        
+                        <div class="textbox">
+                            <label for="subject">Comment:<span style="color: red;">*</label>
+                            <textarea id="comment" name="comment" rows="9"></textarea> </br>
+                        </div>
+                        
+                        <div class="btn">
+                            <a href="Thankyou.html">
+                            <img src='images/btn_submit.gif' alt='submit button'/></a>
+                        </div>
+            
+                    </form>
+                </div> 
+            </div>
+        </aside> 
+    </div>
+    <div class="footer-container">
+        <footer align="center"> <div><strong>Copyright (c) UMD. All Rights Reserved.</strong></div></footer>
+    </div>
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>

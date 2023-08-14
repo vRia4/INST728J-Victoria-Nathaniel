@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text on Top of Textarea</title>
+  <style>
+    .textarea-container {
+      position: relative;
+    }
+
+    .textarea-label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 14px;
+      color: #777;
+      padding: 5px;
+      pointer-events: none; /* Prevent the label from capturing mouse events */
+    }
+
+    textarea {
+      width: 300px;
+      height: 150px;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="textarea-container">
+    <label for="comment">Comment:</label>
+    <label class="textarea-label" for="comment">Enter your comment:</label>
+    <textarea id="comment" name="comment" required></textarea>
+  </div>
+</body>
+</html>

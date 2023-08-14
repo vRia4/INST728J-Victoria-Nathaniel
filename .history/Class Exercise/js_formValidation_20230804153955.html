@@ -1,0 +1,74 @@
+<html>   
+   <head>
+      <title>Form Validation</title>      
+      <script type = "text/javascript">
+   <!--
+      // Form validation code will come here.
+      function validate() {
+      
+         if( document.myForm.num.value == "" ) {
+            alert( "Please enter your caseID!" );
+            document.myForm.num.focus() ;
+            return false;
+         }
+         if( document.myForm.class.value == "" ) {
+            alert( "Please the Subject title!" );
+            document.myForm.class.focus() ;
+            return false;
+         }
+         if( document.myForm.comment.value == "" ) {
+            alert( "Please provide!" );
+            document.myForm.comment.focus() ;
+            return false;
+         }
+         return( true );
+      }
+   //-->
+</script>      
+   </head>
+   
+   <body>
+      <form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
+         <table cellspacing = "2" cellpadding = "2" border = "1">
+            
+             <tr>
+               <td align = "right">FirstName</td>
+               <td><input type = "text" name = "fName" /></td>
+            </tr>
+            
+			<tr>
+               <td align = "right">LastName</td>
+               <td><input type = "text" name = "lName" /></td>
+            </tr>
+			
+            <tr>
+               <td align = "right">EMail</td>
+               <td><input type = "text" name = "EMail" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Zip Code</td>
+               <td><input type = "text" name = "Zip" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Country</td>
+               <td>
+                  <select name = "Country">
+                     <option value = "-1" selected>[choose yours]</option>
+                     <option value = "1">USA</option>
+                     <option value = "2">UK</option>
+                     <option value = "3">Canada</option>
+                  </select>
+               </td>
+            </tr>
+            
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" value = "Submit" /></td>
+            </tr>
+            
+         </table>
+      </form>      
+   </body>
+</html>

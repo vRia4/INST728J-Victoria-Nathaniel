@@ -1,0 +1,300 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>INST728J Example CSS Website</title>
+
+	<style>
+
+		.container{
+
+			width:100%;
+
+			margin:auto;
+
+			background-color: beige;
+
+			padding:10px;
+
+		}
+
+		
+
+		nav{
+
+			background-color :#ff0000;
+
+			width:100%;
+
+		}
+
+			
+
+		nav a{
+
+			display : block;
+
+			text-decoration : none;
+
+			color : black;
+
+			text-align : center;
+
+			padding : 10px; <!-- increade width of navigatioon bar -->
+
+		}
+
+		
+
+		.header-container header{
+
+			background-color : black;
+
+			color : white; <!--text color -->
+
+			text-transform : UPPERCASE; <!--authomatically transforms the header to Uppercase -->
+
+			padding : 120 px;
+
+		}
+
+		
+
+		nav a:hover {
+
+		  background-color: yellow;
+
+		}
+
+		
+
+		#content{
+
+			background-color : white;
+
+			width : 60%;
+
+			float : left; <!--Place texts on the left side -->
+
+			height : auto;
+
+            padding-bottom : 600px;           
+
+			
+
+		}
+
+		
+
+		#sidemenu{
+
+			width : 40%;
+
+			float : right;
+
+			background-color : #BEF781;
+
+            height : auto;
+
+			
+
+		
+
+		}
+
+		
+
+		.main-container {
+
+			background-color : red;
+
+			height : 100%;
+
+		
+
+		}
+
+		
+
+		#sidemenu li {
+
+			list-style-type: none;
+
+			display : block;
+
+			width : 100%;
+
+			padding : 3 px;
+
+			background-color :#E1F5A9;
+
+		
+
+		}
+
+		
+
+		.footer-container{
+
+			clear : both;
+
+			background-color : black;
+
+			padding : 10px;
+
+			
+
+		}
+
+		
+
+		.clear-fix{
+
+			clear : both;
+
+		}
+
+		
+	
+	
+		nav  li { /* all list items... */
+			display: inline; /* set the list items left-to-right */
+			position: relative; /* set the origin for child boxes to be positioned from */
+		}
+
+		nav ul li{
+
+			list-style-type:none;
+
+			display:inline-block;<!--This will display the menu horizontally -->
+
+			padding-right: 300px; <!--Create space between the menu options -->
+			
+		}
+	
+		
+		nav ul ul {
+			position: absolute; /* place them over the top of everything */
+			left: 0;  /* align them to the left of the parent list item  - necessary for some older browsers */
+			top: 100%;  /* align them to the bottom of the parent list item - again only necessary for older browsers */
+			background: red;
+			display: none; /* hide them */
+		}
+	
+		nav ul ul ul { /**?
+			left: 100%;
+			top: 0;
+			background: red;
+			display: none;
+		}
+	
+		li:hover > ul {
+			display: block;
+		}
+	
+		
+
+	</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<!--3 main sections -->
+
+		<div class="header-container">
+
+			<header>
+
+			<h1>INST 728J HTML/CSS Class</h1>
+
+			
+
+			</header>
+
+			<!--Navigation Bar -->
+
+				<nav >  <!--A bunch of unordered lists -->
+					
+						<ul >
+
+							<li><a href="#"> Home </a></li>
+
+							<li><a href="#"> Modules</a>
+								<ul>
+									<li><a href="">Modules1</a>
+										<ul>
+											<li><a href="#">Modules1.1</a></li>
+											<li><a href="#">Modules1.2</a></li>
+										</ul>
+									</li>
+									<li><a href="">Modules2</a>
+										<ul>
+											<li><a href="#">Modules2.1</a></li>
+											<li><a href="#">Modules2.2</a></li>
+										</ul>
+									</li>
+									<li><a href="">Modules3</a></li>
+									<li><a href="">Modules4</a></li>
+								</ul>
+							</li>
+
+							<li><a href="#"> Syllbi</a></li>
+
+						</ul>
+
+				</nav>
+
+		</div>
+
+		<div class="main-container">
+
+			<div id="content">
+
+			<!-- Content Area-->
+
+				<header>This is the Main Page of INST 728j</header>
+
+				<p>This is only an example. This is only an example.This is only an example.</p>
+
+				
+
+			</div>
+
+			<aside id="sidemenu">
+
+				<h3>Announcement</h3>
+
+				<ul>
+
+					<li><a href="#"> Announcement1</li>
+
+					<li><a href="#"> Announcement2</li>
+
+					<li><a href="#"> Announcement3</li>
+
+				</ul>
+
+			</aside>
+
+		</div>
+
+		<div class="footer-container">
+
+		<footer> <div>(c) of UMD iSchool </div></footer>
+
+		</div>
+
+	</div>
+
+</body>
+
+
+
+</html>

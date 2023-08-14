@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Subscription</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+	<link rel="stylesheet" href="styles.css"/>  
+	<script async defer src="script.js" charset = "utf-8"></script>      
+</head>
+   
+<body style="background-image: url(image/sub.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;">
+		
+	<h1 class="head1">Sign in here to get more feed</h1>
+	<form action = "welcome.html" name = "myForm" onsubmit = "return(validate());">
+		<table cellspacing = "20" cellpadding = "5" style="background-color: lightblue; width: 50%;" >
+		
+			<tr>
+				<td align = "right">FirstName:</td>
+				<td><input type = "text" name = "fName" placeholder="First name" cols = "20"/></td>
+			</tr>
+			
+			<tr>
+				<td align = "right">LastName:</td>
+				<td><input type = "text" name = "lName" placeholder="Last name"/></td>
+			</tr>
+			
+			<tr>
+				<td align = "right">EMail:</td>
+				<td><input type = "text" name = "EMail" placeholder="Email"/></td>
+			</tr>
+
+			<tr>
+				<td align = "right">Zip Code:</td>
+				<td><input type = "text" name = "Zip" placeholder="Zipcode"/></td>
+			</tr>
+			
+			<tr>
+				<td align = "right">Country</td>
+				<td>
+					<select name = "Country">
+						<option value = "-1" selected>Select country</option>
+						<option value = "1">Australia</option>
+						<option value = "2">Canada</option>
+						<option value = "3">France</option>
+						<option value = "4">Germany</option>
+						<option value = "5">Georgia</option>
+						<option value = "6">Mexico</option>
+						<option value = "7">Spain</option>
+						<option value = "8">UK</option>
+						<option value = "9">USA</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td align = "right"></td>
+				<td><input type = "submit" value = "Submit" /></td>
+			</tr>
+		</table> 
+	</form>
+	
+	<h2 class="head2">By selecting "Submit," you agree to the TravelSpot <u>Privacy Policy and Terms & Conditions</u>. <br>[Unsubscribe] from email notifications at anytime. Please note that it may take 3-5 business days for your subscription be effective.</h2>
+	
+	<footer> 
+		<div><strong>Follow us on social media for more highlights</strong></div>
+		<p>&copy; 2023 TravelSpot. All rights reserved.</p>
+		<p>Contact: travelspot@gmail.com</p>
+
+		<div class="icons">
+			<a href="https://www.facebook.com" title="Facebook"><i class="fab fa-facebook"></i></a>
+			<a href="https://www.twitter.com" title="Twitter"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.instagram.com" title="Instagram"><i class="fab fa-instagram"></i></a>
+		</div>
+	</footer>
+</body>
+</html>

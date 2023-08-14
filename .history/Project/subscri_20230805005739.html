@@ -1,0 +1,103 @@
+<html>   
+   <head>
+      <title>Form Validation</title>      
+      <script type = "text/javascript">
+   <!--
+      // Form validation code will come here.
+      function validate() {
+      
+         if( document.myForm.fName.value == "" ) {
+            alert( "Please provide your first name!" );
+            document.myForm.fName.focus() ;
+            return false;
+         }
+         if( document.myForm.EMail.value == "" ) {
+            alert( "Please provide your Email!" );
+            document.myForm.EMail.focus() ;
+            return false;
+         }
+         if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
+            document.myForm.Zip.value.length != 5 ) {
+            
+            alert( "Please provide a zip in the format #####." );
+            document.myForm.Zip.focus() ;
+            return false;
+         }
+         if( document.myForm.Country.value == "-1" ) {
+            alert( "Please provide your country!" );
+            return false;
+         }
+         return( true );
+      }
+   //-->
+</script>
+<style>
+	table, th,td {
+		/* border-style: groove; */
+		/* margin-left: 15%; */
+		margin-top: 20px;
+		padding : 10px;
+		/* text-align: left; */
+		background-color: lightblue;
+	}
+
+	h2{
+		font-family: 'Courier New', Courier, monospace;
+		fo
+	}
+	</style>      
+   </head>
+   
+   <body style="background-image: url(image/sub.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin-left: 30%;
+   margin-top: 10%; " height="100vh"
+   >
+	<h1>Sign in here to get more feed</h1>
+      <form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
+         <table cellspacing = "5" cellpadding = "5" >
+            
+             <tr>
+               <td align = "right">FirstName:</td>
+               <td><input type = "text" name = "fName" placeholder="First name"/></td>
+            </tr>
+            
+			<tr>
+               <td align = "right">LastName:</td>
+               <td><input type = "text" name = "lName" placeholder="Last name"/></td>
+            </tr>
+			
+            <tr>
+               <td align = "right">EMail:</td>
+               <td><input type = "text" name = "EMail" placeholder="Email"/></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Zip Code:</td>
+               <td><input type = "text" name = "Zip" placeholder="Zipcode"/></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Country</td>
+               <td>
+                  <select name = "Country">
+                     <option value = "-1" selected>Select country</option>
+                     <option value = "1">USA</option>
+                     <option value = "2">UK</option>
+                     <option value = "3">Canada</option>
+                  </select>
+               </td>
+            </tr>
+            
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" value = "Submit" /></td>
+            </tr>
+            
+         </table>
+
+		 <h2>By selecting "Submit," you agree to the TravelSport Privacy Policy and Terms & Conditions. [Unsubscribe] from email notifications anytime.</h2>
+      </form>      
+   </body>
+</html>

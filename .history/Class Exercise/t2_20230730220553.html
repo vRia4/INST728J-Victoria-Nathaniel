@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css"/>
+    <style>
+        nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+ul.menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+ul.menu li a:hover {
+  background-color: #555;
+}
+
+ul.submenu {
+  display: none;
+  position: absolute;
+  background-color: #555;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.submenu li {
+  display: block;
+}
+
+ul.submenu li a {
+  color: #fff;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+ul.submenu li a:hover {
+  background-color: #777;
+}
+
+li#dropdown:hover .submenu {
+  display: block;
+}
+    </style>
+</head>
+<body >
+<!-- style = "background: url(image/vacay.png);
+background-size: cover;
+background-repeat: no-repeat;"> -->
+
+    <nav >
+      <!-- <div class="menu_bar">
+        <h4 class="logo">Travel<span>Spot</span></h4> -->
+        <!-- <img src='vacay.png' alt='visit'/> -->
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+          
+            <li id="dropdown">
+              <a href="#">Locations</a>
+                <ul class="submenu">
+                    <li><a href="london.html">London</a></li>
+                    <li><a href="miami.html">Miami </a></li>
+                    <li><a href="sanfran.html">San Francisco</a></li>
+                  </ul>
+            </li>
+            
+            <li><a href = "recom.html">Guide Book</a></li>
+            
+            <li><a href="subscri.html">Subscription</a></li>
+
+            <li><a href="info.html">Contact Us</a></li>
+        </ul>
+      </div>
+    <!-- </nav> -->
+
+    <!-- <h1><a href="subscri.html">Subscribe for more information</a></h1> -->
+    </body>

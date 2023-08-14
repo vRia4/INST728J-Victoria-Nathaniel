@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Submission</title>
+    <style>
+        /* Styles for the form container */
+        .form-container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f7f7f7;
+        }
+
+        /* Styles for input fields */
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Style the submit button */
+        .form-submit {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Style the submit button on hover */
+        .form-submit:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Form Submission</h1>
+        <form action="process_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" class="form-input" rows="4" required></textarea>
+
+            <input type="submit" value="Submit" class="form-submit">
+        </form>
+    </div>
+</body>
+</html>

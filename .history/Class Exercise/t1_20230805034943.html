@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown with Overview Description</title>
+    <style>
+        /* Basic styles for the dropdown container */
+        .dropdown-container {
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        /* Style for the overview section */
+        .overview {
+            cursor: pointer;
+            font-weight: bold;
+            border: 1px solid #ccc;
+        }
+
+        /* Initially hide the detailed description */
+        .description {
+            display: none;
+            margin-top: 10px;
+        }
+
+        /* Show the description when the dropdown is expanded */
+        .expanded .description {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dropdown with Overview Description</h1>
+
+    <div class="dropdown-container">
+        <div class="overview" onclick="toggleDropdown(this)">
+            Overview 1
+        </div>
+        <div class="description">
+            Detailed description for Overview 1 goes here.
+        </div>
+    </div>
+
+    <div class="dropdown-container">
+        <div class="overview" onclick="toggleDropdown(this)">
+            Overview 2
+        </div>
+        <div class="description">
+            Detailed description for Overview 2 goes here.
+        </div>
+    </div>
+
+    <!-- Add more dropdown items as needed -->
+    
+    <script>
+        function toggleDropdown(overview) {
+            overview.parentElement.classList.toggle('expanded');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Priority Form</title>
+  <style>
+    .form-group {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .radio-label {
+      display: inline-block;
+      font-size: 14px;
+      color: #777;
+      margin-right: 10px;
+    }
+
+    .radio-option {
+      margin-right: 20px;
+    }
+
+    .radio-option input[type="radio"] {
+      vertical-align: center;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Priority Form</h2>
+  <div class="form-group">
+    <span class="radio-label">Important:</span>
+    <div class="radio-option">
+      <input type="radio" id="high" name="priority" value="high" required>
+      <label for="high">High</label>
+    </div>
+    <div class="radio-option">
+      <input type="radio" id="medium" name="priority" value="medium">
+      <label for="medium">Medium</label>
+    </div>
+    <div class="radio-option">
+      <input type="radio" id="low" name="priority" value="low">
+      <label for="low">Low</label>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ Table</title>
+    <style>
+        /* Basic table styles */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+
+        /* Styling for the toggle arrow */
+        .toggle-arrow {
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .toggle-arrow::before {
+            content: "\25B6"; /* Unicode character for right-pointing triangle */
+            margin-right: 8px;
+            display: inline-block;
+        }
+
+        .expanded .toggle-arrow::before {
+            content: "\25BC"; /* Unicode character for down-pointing triangle */
+        }
+
+        /* Initially hide the answer cells */
+        .answer {
+            display: none;
+        }
+
+        /* Show/hide answer cells on toggle */
+        .expanded .answer {
+            display: table-cell;
+        }
+    </style>
+</head>
+<body>
+    <h1>FAQ</h1>
+    <table>
+        <tr>
+            <th>Question</th>
+            <th>Answer</th>
+        </tr>
+        <tr class="toggle-arrow">
+            <td>What is Lorem Ipsum?</td>
+            <td class="answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+        </tr>
+        <tr class="toggle-arrow">
+            <td>Why do we use it?</td>
+            <td class="answer">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</td>
+        </tr>
+        <!-- Add more FAQ items as needed -->
+    </table>
+
+    <script>
+        // JavaScript to toggle the answer cells when clicking on the questions
+        const toggleArrows = document.querySelectorAll('.toggle-arrow');
+        toggleArrows.forEach((arrow) => {
+            arrow.addEventListener('click', () => {
+                arrow.classList.toggle('expanded');
+            });
+        });
+    </script>
+</body>
+</html>

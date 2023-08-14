@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Label Beside Radio Button</title>
+  <style>
+    .form-group {
+      display: flex;
+      align-items: center;
+    }
+
+    .radio-container {
+      margin-right: 10px;
+    }
+
+    .radio-container label {
+      display: block;
+      font-size: 14px;
+      color: #777;
+    }
+
+    .radio-container input[type="radio"] {
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-group">
+    <div class="radio-container">
+      <label for="high">High</label><input type="radio" id="high" name="priority" value="high" required>
+      
+    </div>
+    <div class="radio-container">
+      <input type="radio" id="medium" name="priority" value="medium">
+      <label for="medium">Medium</label>
+    </div>
+    <div class="radio-container">
+      <input type="radio" id="low" name="priority" value="low">
+      <label for="low">Low</label>
+    </div>
+  </div>
+</body>
+</html>

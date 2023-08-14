@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Feedback</title>
+<head>
+    <style>
+        .wrapper {
+            background-color:rgb(253, 234, 237);
+            padding: 15px;
+            
+        }
+
+        .title { 
+            color:#9B3333;
+            margin-left: 20%;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        label {
+            margin-left: 20%;
+            font-weight: bold;
+        }
+
+        input[type="num"] {
+            width: 10%;
+            margin-left: 5%;
+        }
+
+        input[type="class"] {
+            width: 30%;
+            margin-left: 4.4%;
+            margin-top: 5px;
+        }
+
+        textarea {
+            width: 19%;
+            margin-left: 30%;
+            padding: 0px;
+        }
+
+        input[type="radio"], input[type="submit"]{
+        margin-left: 30%;
+        margin-top: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <legend class="title">FEEDBACK</legend>
+
+        <form name="myFirstForm" method="post" action="ThankYou.html">
+            <label for="caseID" > CaseID: </label>
+	        <input type="num" value="34564"><br>
+
+            <label for="subject">Subject:<span style="color: red;">*</label>
+            <input type="class" placeholder=" "> 
+            
+            <div>
+                <label for="comment"> Comment: </label> </br>
+                <textarea id="comment" name="comment" rows="10" cols="30"></textarea> </br>
+            </div>
+
+            <label for="importance"> Importance:</label><br>
+            <input type="radio" name="value">High </br>
+            <input type="radio" name="value">Medium </br>
+            <input type="radio" name="value">Low </br>
+            
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>         
+    
+</body>
+</html>

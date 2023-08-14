@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Highlight Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Reset default list styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the menu items */
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Highlight the active menu item */
+nav a.active {
+    background-color: #3498db; /* Example color */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+  
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#" class="active">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

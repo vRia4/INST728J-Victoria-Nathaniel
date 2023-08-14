@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function handleSubmit() {
+            event.preventDefault();
+            var form = document.getElementById("myForm");
+            var message = document.getElementById("responseMessage");
+            message.innerHTML = "Form submitted successfully!";
+        }
+    </script>
+</head>
+<body>
+    <form id="myForm" onsubmit="handleSubmit()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="responseMessage"></div>
+</body>
+</html>

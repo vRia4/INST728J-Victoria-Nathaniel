@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Subscription</title>
+</head>
+<body>
+    <h1>Sign in here to get more feed</h1>
+<fieldset style="background-color:lightblue">
+<form name="myFirstForm" method="post" action="welcome.html" onsubmit = "return(validateForm());">
+<legend class="legend"><strong>Personal Information</legend></strong> </br>
+<div>
+	<label for="FirstName" > FirstName</label>
+	<input type="text" placeholder="FirstName" name="fname"> </br>
+	<label for="LastName"> LastName</label>
+	<input type="text" placeholder="LastName" name="lname">
+</div>
+<br>
+
+<div>
+	<label for="Gender" > Gender</label><br>
+	<input type="radio" name="Gender" required>Male
+	<input type="radio" name="Gender">Female
+</div>
+<br>
+<div>
+	<label for="Address"> Address</label><br>
+	<input type="text" placeholder="ZipCode" name="zip"> 
+</div>
+<br>
+
+<div>
+	<label for="Email"> Email</label> <br>
+	<input type="email" placeholder="Your Email address" name="mail">
+</div>
+<br>
+<div>
+	<input type="submit" value="Submit">
+</div>
+</fieldset>
+
+<script type = "text/javascript">
+	function validateForm() {
+	
+		if( document.myForm.caseID.value == "" ) {
+			alert( "Please enter your caseID!" );
+			document.myForm.caseID.focus() ;
+			return false;
+		}
+		if( document.myForm.subject.value == "" ) {
+			alert( "Please enter the Subject title!" );
+			document.myForm.subject.focus() ;
+			return false;
+		}
+		if( document.myForm.comment.value == "" ) {
+			alert( "Please provide a comment!" );
+			document.myForm.comment.focus() ;
+			return false;
+		}
+		return(true);
+	}
+</script>
+</body>
+</html>

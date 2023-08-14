@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Page Title</title>
+    <style>
+        /* Styling for the dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Styling for the arrow */
+        .dropdown::after {
+            content: "\25BC"; /* Unicode character for the black down-pointing triangle */
+            font-size: 14px;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Your content goes here -->
+    
+    <!-- Customized Dropdown arrow using CSS -->
+    <div class="dropdown">
+        <button>Dropdown Menu</button>
+        <div class="dropdown-content">
+            <p>Option 1</p>
+            <p>Option 2</p>
+            <p>Option 3</p>
+            <!-- Add more options as needed -->
+        </div>
+    </div>
+</body>
+</html>

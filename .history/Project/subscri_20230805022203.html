@@ -1,0 +1,146 @@
+<html>   
+   <head>
+      <title>Form Validation</title>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
+      <script type = "text/javascript">
+   <!--
+      // Form validation code will come here.
+      function validate() {
+      
+         if( document.myForm.fName.value == "" ) {
+            alert( "Please provide your first name!" );
+            document.myForm.fName.focus() ;
+            return false;
+         }
+         if( document.myForm.EMail.value == "" ) {
+            alert( "Please provide your Email!" );
+            document.myForm.EMail.focus() ;
+            return false;
+         }
+         if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
+            document.myForm.Zip.value.length != 5 ) {
+            
+            alert( "Please provide a zip in the format #####." );
+            document.myForm.Zip.focus() ;
+            return false;
+         }
+         if( document.myForm.Country.value == "-1" ) {
+            alert( "Please provide your country!" );
+            return false;
+         }
+         return( true );
+      }
+   //-->
+</script>
+<style>
+	/* html{
+		background-image: url(image/sub.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 100vh;
+	} */
+	h1, h2, th, td, table {
+		/* border-style: groove; */
+		/* margin-left: 15%; */
+		margin-top: 20px;
+		padding : 10px;
+		/* width: 70%; */
+		/* text-align: left; */
+		/* background-image: url(image/sub.png);
+		background-size: cover;
+		background-repeat: no-repeat; */
+		margin-left: 30%;
+		/* margin-top: 10%;  */
+		/* height: 100vh; */
+	}
+
+	h2{
+		font-family: "Helvetica Neue",Helvetica,Arial;
+		font-size: 14px;
+	}
+
+	footer {
+            background-color: #f3e2e2;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+            font-size: 14px;
+			margin-top: 20%;
+        }
+
+	footer .icons {
+		margin-top: 0%;
+	}
+
+	footer .icons a {
+		color: #921515;
+		margin-right: 10px;
+	}
+
+	</style>      
+   </head>
+   
+   <body style="background-image: url(image/sub.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;">
+		
+		<h1>Sign in here to get more feed</h1>
+      	<form action = "welcome.html" name = "myForm" onsubmit = "return(validate());">
+         	<table cellspacing = "5" cellpadding = "5" style="background-color: lightblue; width: 50%;" >
+            
+				<tr>
+					<td align = "right">FirstName:</td>
+					<td><input type = "text" name = "fName" placeholder="First name" cols = "20"/></td>
+				</tr>
+				
+				<tr>
+					<td align = "right">LastName:</td>
+					<td><input type = "text" name = "lName" placeholder="Last name"/></td>
+				</tr>
+				
+				<tr>
+					<td align = "right">EMail:</td>
+					<td><input type = "text" name = "EMail" placeholder="Email"/></td>
+				</tr>
+				
+				<tr>
+					<td align = "right">Zip Code:</td>
+					<td><input type = "text" name = "Zip" placeholder="Zipcode"/></td>
+				</tr>
+				
+				<tr>
+					<td align = "right">Country</td>
+					<td>
+						<select name = "Country">
+							<option value = "-1" selected>Select country</option>
+							<option value = "1">USA</option>
+							<option value = "2">UK</option>
+							<option value = "3">Canada</option>
+						</select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td align = "right"></td>
+					<td><input type = "submit" value = "Submit" /></td>
+				</tr>
+         	</table> 
+      	</form>
+		
+		<h2>By selecting "Submit," you agree to the TravelSpot <u>Privacy Policy and Terms & Conditions</u>. <br>[Unsubscribe] from email notifications at anytime. Please note that it may take 3-5 business days for your subscription be effective</h2>
+		
+		<footer> 
+			<div><strong>Follow us on social media for more highlights</strong></div>
+			<p>&copy; 2023 TravelSpot. All rights reserved.</p>
+        <p>Contact: travelspot@gmail.com</p>
+        
+        <!-- Social Media Icons -->
+        <div class="icons">
+            <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+		</footer>
+
+   </body>
+</html>

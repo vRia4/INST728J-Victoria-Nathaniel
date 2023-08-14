@@ -1,0 +1,125 @@
+<html>   
+	<head>
+		<title>Form Validation</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
+    	<script type = "text/javascript">
+
+			function validate() {
+			
+				if( document.myForm.flName.value == "" ) {
+					alert( "Please provide your first name!" );
+					document.myForm.flName.focus() ;
+					return false;
+				}
+				if( document.myForm.Email.value == "" ) {
+					alert( "Please provide your Email!" );
+					document.myForm.Email.focus() ;
+					return false;
+				}
+				if( document.myForm.topic.value == "-1" ) {
+					alert( "Please provide your country!" );
+					return false;
+				}
+				return( true );
+			}
+		</script>
+		<style>
+			html{
+				background-image: url(image/sub.png);
+				background-size: cover;
+				background-repeat: no-repeat;
+				height: 100vh;
+			}
+			h1, h2, th, td, table {
+				margin-top: 20px;
+				padding : 10px;
+				margin-left: 15%;
+			}
+
+			h2{
+				font-family: "Helvetica Neue",Helvetica,Arial;
+				font-size: 14px;
+			}
+
+			/* footer {
+					background-color: #f3e2e2;
+					padding: 20px;
+					text-align: center;
+					color: #333;
+					font-size: 14px;
+					margin-top: 20.5%;
+					width: 100%;
+					margin-right: 20%;
+					padding-right: 0px;
+				}
+
+			footer .icons {
+				margin-top: 0%;
+			} */
+
+			footer .icons a {
+				color: #921515;
+				margin-right: 10px;
+			}
+
+		</style>      
+   </head>
+   
+   <body style="background-image: url(image/sub.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;">
+		
+		<h1>Contact Us</h1>
+        <p>Thank you for contacting us. Please leave your questions here and we will ende</p>
+      	<form action = "welcome.html" name = "myForm" onsubmit = "return(validate());">
+         	<table cellspacing = "10" cellpadding = "10" style="background-color: lightblue; width: 50%;" >
+            
+				<tr>
+					<td align = "right">Name:</td>
+					<td><input type = "text" name = "flName" placeholder="Full Name" cols = "20"/></td>
+				</tr>
+				
+				<tr>
+					<td align = "right">Email:</td>
+					<td><input type = "text" name = "Email" placeholder="Email"/></td>
+				</tr>
+
+				<tr>
+					<td align = "right">Select related topic question to discuss</td>
+					<td>
+						<select name = "topic">
+							<option value = "-1" selected>Select a topic</option>
+							<option value = "1">Australia</option>
+							<option value = "2">Canada</option>
+							<option value = "3">France</option>
+							<option value = "4">Germany</option>
+							<option value = "5">Georgia</option>
+							<option value = "6">Mexico</option>
+							<option value = "7">Spain</option>
+							<option value = "8">UK</option>
+							<option value = "9">USA</option>
+						</select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td align = "right"></td>
+					<td><input type = "submit" value = "Submit" /></td>
+				</tr>
+         	</table> 
+      	</form>
+		
+		<footer align="center" style="margin-top: 3.5%; background-color: #f3e2e2; padding: 20px; color: #333;"> 
+			<div><strong>Follow us on social media for more highlights</strong></div>
+			<p>&copy; 2023 TravelSpot. All rights reserved.</p>
+			<p>Contact: travelspot@gmail.com</p>
+	
+			<div class="icons">
+				<a href="https://www.facebook.com" title="Facebook"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.twitter.com" title="Twitter"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.instagram.com" title="Instagram"><i class="fab fa-instagram"></i></a>
+			</div>
+		</footer>
+   	</body>
+</html>
